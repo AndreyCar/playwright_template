@@ -8,6 +8,12 @@ on:
         types: [regression]
     schedule:
         - cron: '0 9 * * *'
+
+env:
+    BASE_URL: ${{ secrets.BASE_URL }}
+    LOGIN_USERNAME: ${{ secrets.LOGIN_USERNAME }}
+    LOGIN_PASSWORD: ${{ secrets.LOGIN_PASSWORD }}
+
 jobs:
     test:
         timeout-minutes: 60

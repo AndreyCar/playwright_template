@@ -6,9 +6,12 @@ on:
         branches: [main]
     repository_dispatch:
         types: [regression]
-    schedule:
-        - cron: '0 9 * * *'
+    # schedule:
+    #     - cron: '0 9 * * *'
     workflow_dispatch:
+
+concurrency: regression_tests
+
 env:
     BASE_URL: ${{ secrets.BASE_URL }}
     LOGIN_USERNAME: ${{ secrets.LOGIN_USERNAME }}

@@ -14,8 +14,8 @@ export default class LoginPage extends BasePage {
     }
 
     set usePage(page: Page) {
-        this.page = page;
-
+        super.usePage = page;
+        
         this.inputUsername = page.locator('#user-name');
         this.inputPassword = page.locator('#password');
         this.btnLogin = page.locator('#login-button');

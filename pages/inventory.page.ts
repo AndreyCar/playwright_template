@@ -12,7 +12,7 @@ export default class InventoryPage extends BasePage {
     }
 
     set usePage(page: Page) {
-        this.page = page;
+        super.usePage = page;
 
         this.btnExtendSidebarMenu = page.locator('#react-burger-menu-btn');
     }

@@ -30,6 +30,8 @@ npm i
 npm playwright install
 ```
 
+-   Copy the `.env.example` file and rename it to `.env`. Please note that in a real project, the `.env.example` file will not have filled values, you will have to fill them in yourself.
+
 ## Steps to run
 
 To run all tests use the following commands:

@@ -1,4 +1,4 @@
-name: Regression Tests
+name: Test
 on:
     push:
         branches: [main]
@@ -10,7 +10,7 @@ on:
     #     - cron: '0 9 * * *'
     workflow_dispatch:
 
-concurrency: regression_tests
+concurrency: test
 
 env:
     BASE_URL: ${{ secrets.BASE_URL }}

@@ -1,6 +1,9 @@
 # Playwright
 reports
 
+# VS Code
+.vscode
+
 # Logs
 logs
 *.log

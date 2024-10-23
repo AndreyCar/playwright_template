@@ -6,6 +6,7 @@
     "scripts": {
         "tests": "npx playwright test",
         "tests:headed": "npx playwright test --headed",
+        "tests:config:chromium": "npx playwright test -c playwright.chromium.config.ts",
         "report:html:show": "npx playwright show-report reports/html"
     },
     "keywords": [],

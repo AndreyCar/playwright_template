@@ -8,6 +8,28 @@ This repository contains the Playwright framework template. You can use it as th
 -   [TypeScript](https://www.typescriptlang.org/)
 -   [Playwright](https://playwright.dev/);
 
+## Install
+
+Before working with this framework, complete the following steps:
+
+-   Clone this repo:
+
+```bash
+git clone https://github.com/AndreyCar/playwright_template.git
+```
+
+-   Install dependencies:
+
+```bash
+npm i
+```
+
+-   Install playwright browsers:
+
+```bash
+npm playwright install
+```
+
 ## Steps to run
 
 To run all tests use the following commands:
@@ -37,7 +59,6 @@ npm run report:html:show
 ### CI
 
 When running the `test.yml` workflow, the HTML report is deployed to the `reports` branch. The GitHub Pages feature is enabled in this branch, and you can view the deployed report by following this [link](https://andreycar.github.io/playwright_template/).
-
 
 ## GitHub Actions
 

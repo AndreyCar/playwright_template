@@ -1,16 +1,23 @@
 {
     "name": "playwright_template",
     "version": "1.0.0",
-    "description": "",
+    "description": "This is a template project for Playwright with TypeScript",
     "main": "index.js",
     "scripts": {
-        "tests": "npx playwright test",
-        "tests:headed": "npx playwright test --headed",
-        "tests:config:chromium": "npx playwright test -c playwright.chromium.config.ts",
-        "report:html:show": "npx playwright show-report reports/html"
+        "tests": "playwright test -c configs/playwright.config.ts",
+        "tests:headed": "playwright test -c configs/playwright.config.ts --headed",
+        "tests:config:chromium": "playwright test -c configs/playwright.chromium.config.ts",
+        "tests:list": "playwright test -c configs/playwright.config.ts --list",
+        "tests:project": "playwright test -c configs/playwright.config.ts --project firefox",
+        "report:html:show": "playwright show-report reports/html"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "playwright",
+        "typescript",
+        "javascript",
+        "template"
+    ],
+    "author": "Andrii Kravchenko (https://github.com/AndreyCar)",
     "license": "ISC",
     "devDependencies": {
         "@playwright/test": "^1.48.1",

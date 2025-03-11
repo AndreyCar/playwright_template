@@ -4,7 +4,7 @@ import config from './playwright.config';
 // This is an example of how you can extend a configuration file in Playwright
 // So we changed the fullyParallel to false
 config.fullyParallel = false;
-// and update projects
+// and updated projects
 config.projects = [
     {
         name: 'chromium',

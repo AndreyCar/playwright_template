@@ -19,8 +19,6 @@ export default class InventoryPage extends BasePage {
 
     /** Open the Inventory page */
     async open(): Promise<void> {
-        await test.step('Open the Inventory page', async () => {
-            await super.open(this.endpoint);
-        });
+        await super.open(this.endpoint);
     }
 }

@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 require('dotenv').config();
 
 export default defineConfig({
-    testDir: './tests',
+    testDir: '../tests',
     globalTimeout: 60 * 60 * 1000,
     timeout: 2 * 60 * 1000,
     expect: { timeout: 5_000 },
@@ -10,9 +10,9 @@ export default defineConfig({
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 1 : 0,
     workers: process.env.CI ? 5 : 5,
-    reporter: [['html', { open: 'never', outputFolder: './reports/html' }], [process.env.CI ? 'dot' : 'list'], ['github']],
-    globalSetup: './hooks/globalSetup.ts',
-    globalTeardown: './hooks/globalTeardown.ts',
+    reporter: [['html', { open: 'never', outputFolder: '../reports/html' }], [process.env.CI ? 'dot' : 'list'], ['github']],
+    globalSetup: '../hooks/globalSetup.ts',
+    globalTeardown: '../hooks/globalTeardown.ts',
     use: {
         baseURL: process.env.BASE_URL,
         screenshot: process.env.CI ? 'only-on-failure' : 'on',

@@ -17,8 +17,6 @@ export default class BasePage {
      * @param path - page endpoint
      */
     async open(path = ''): Promise<void> {
-        await test.step('Open page', async () => {
-            await this.page.goto('/' + path);
-        });
+        await this.page.goto('/' + path);
     }
 }

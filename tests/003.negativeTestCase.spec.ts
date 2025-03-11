@@ -3,7 +3,7 @@ import { errorInvalidCredentials } from '@constants/errors.constants.json';
 
 /*
 Flow: Login
-Test case: 005 - Login with invalid password (negative test case)
+Test case: 003 - Login with invalid password (negative test case)
 Steps:
 1. Open the Login page
 2. Enter valid username 
@@ -14,7 +14,7 @@ Steps:
 */
 
 test.describe('Login', () => {
-    test('Login with invalid password (negative test case)', { tag: '@005' }, async ({ loginPage }) => {
+    test('Login with invalid password (negative test case)', { tag: '@003' }, async ({ loginPage }) => {
         await loginPage.open();
         await loginPage.login({ username: process.env.LOGIN_USERNAME, password: 'invalid_password' });
         await expect(loginPage.page).toHaveURL(loginPage.endpoint);

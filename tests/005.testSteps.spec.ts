@@ -2,7 +2,7 @@ import { expect, test } from '@fixtures/fixtures';
 
 /*
 Flow: Login
-Test case: 003 - Login with valid credentials (test steps)
+Test case: 005 - Login with valid credentials (test steps)
 Steps:
 1. Open the Login page
 2. Enter valid username 
@@ -12,7 +12,7 @@ Steps:
 */
 
 test.describe('Login', () => {
-    test('Login with valid credentials (test steps)', { tag: '@003' }, async ({ loginPage, inventoryPage }) => {
+    test('Login with valid credentials (test steps)', { tag: '@005' }, async ({ loginPage, inventoryPage }) => {
         await test.step('1. Open the Login page', async () => {
             await loginPage.open();
         });

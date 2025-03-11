@@ -13,7 +13,7 @@ Steps:
 */
 
 test.describe('Login', () => {
-    test('Login with valid credentials (fixtures)', { tag: '@004' }, async ({ loginPage, inventoryPage }) => {
+    test('Login with valid credentials (soft expect)', { tag: '@004' }, async ({ loginPage, inventoryPage }) => {
         await loginPage.open();
         await loginPage.login({ username: process.env.LOGIN_USERNAME, password: process.env.LOGIN_PASSWORD });
         await expect.soft(inventoryPage.btnExtendSidebarMenu).toBeHidden();

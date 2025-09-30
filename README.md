@@ -10,12 +10,20 @@ This repository contains the Playwright framework template. You can use it as th
 
 ## Install
 
-Before working with this framework, complete the following steps:
+-   Install [NodeJS](https://nodejs.org/)
+
+-   Install [Git](https://git-scm.com/)
 
 -   Clone this repo:
 
 ```bash
 git clone https://github.com/AndreyCar/playwright_template.git
+```
+
+-   Go to the project folder
+
+```bash
+cd playwright_template
 ```
 
 -   Install dependencies:
@@ -45,7 +53,7 @@ npm run tests
 -   In headed mode (with showing the browser):
 
 ```bash
-npm run tests
+npm run tests:headed
 ```
 
 ## Reports
